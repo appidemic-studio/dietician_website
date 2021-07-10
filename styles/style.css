@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f7f2ec;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: #f7f2ec;
+  border: 2px solid #617c71;
+  outline: none;
+  border-radius: 5px;
+  color: #000;
+}
+
+button:hover {
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  color: #f7f2ec;
+  background-color: #617c71;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7rem;
+  width: 100%;
+  background-color: #617c71;
+  color: #fff;
+}
+
+.header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+}
+
+.logo-section {
+  padding: 0.6rem 1.2rem;
+  border: 3px solid #f7f2ec;
+  border-radius: 5px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.logo-section h3 {
+  font-size: 2rem;
+}
+
+.nav-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.nav-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-section ul li {
+  list-style: none;
+  color: #f7f2ec;
+  padding: 0.3rem 0.6rem;
+  border: 2px solid #617c71;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.nav-section ul li:hover {
+  border: 2px solid #f7f2ec;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.log-in {
+  padding: 0.3rem 0.6rem;
+  background-color: #f7f2ec;
+  color: #617c71;
+  border-radius: 5px;
+}
+
+.log-in p {
+  font-size: 1.1rem;
+}
+
+.intro {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.52)), to(rgba(0, 0, 0, 0.73))), url("../images/healthy-diet.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(0, 0, 0, 0.73)), url("../images/healthy-diet.jpg");
+  width: 100%;
+  height: 670px;
+  background-size: cover;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.intro_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  background-color: #f7f2ec;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  border: 2px solid #617c71;
+}
+
+.intro_container img {
+  height: 650px;
+  width: 450px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border: 2px solid #617c71;
+}
+
+.text-area {
+  background: #f7f2ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  width: 500px;
+  height: 250px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0.9;
+  border: 2px solid #617c71;
+}
+
+.text-area_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-area_container h2 {
+  font-size: 2.6rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.text-area_container p {
+  font-size: 1.1rem;
+  margin-top: 1.6rem;
+}
+
+.plans {
+  border: 2px solid #617c71;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plans img {
+  height: 700px;
+  width: 900px;
+  border-right: 2px solid #617c71;
+}
+
+.free-pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eadbd6;
+  width: 100%;
+}
+
+.free-pdf_container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.free-pdf_container h2 {
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.free-pdf_container p {
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.free-pdf_container ul {
+  margin-top: 4rem;
+  padding-left: 1rem;
+}
+
+.free-pdf_container ul li {
+  margin-top: 0.3rem;
+}
+
+.free-pdf_container button {
+  margin-top: 2rem;
+}
+
+.testimonials {
+  background-color: #617c71;
+  color: #f7f2ec;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials_container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.test {
+  width: 400px;
+  text-align: center;
+}
+
+.test h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.test p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.coaching {
+  background: url("../images/home-grown-veggies-and-fruits.jpg") no-repeat;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coaching_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  background: #f7f2ec;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #617c71;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+}
+
+.coaching_container h2 {
+  font-size: 2.3rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.coaching_container p {
+  margin-top: 1rem;
+  padding: 0 2rem;
+  font-size: 1rem;
+}
+
+.coaching_container .leads {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.coaching_container .leads input[type='text'] {
+  width: 300px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 2px solid #617c71;
+  font-size: 1rem;
+  outline: none;
+}
+
+.coaching_container .leads button {
+  margin-top: 0;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer_container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer_container .logo-section {
+  border: 3px solid #617c71;
+}
+
+footer .footer_container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+footer .footer_container .social p {
+  font-size: 1.3rem;
+}
+
+footer .footer_container .social img {
+  margin-top: 1.5rem;
+  margin-left: 0.8rem;
+}
+
+.designed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.7rem 0;
+  background-color: #eadbd6;
+  font-family: 'Kaushan Script', cursive;
+}
+/*# sourceMappingURL=style.css.map */
