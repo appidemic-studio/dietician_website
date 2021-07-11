@@ -56,6 +56,10 @@ header {
 
   h3 {
     font-size: 2rem;
+
+    @media (max-width: 1000px) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -86,6 +90,9 @@ header {
       }
     }
   }
+  @media (max-width: 1300px) {
+    display: none;
+  }
 }
 
 .log-in {
@@ -100,6 +107,7 @@ header {
 }
 
 .intro {
+  position: relative;
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.52),
@@ -126,9 +134,13 @@ header {
 
     img {
       height: 650px;
-      width: 450px;
+      width: 400px;
       align-self: flex-end;
       border: 2px solid #617c71;
+    }
+
+    @media (max-width: 1200px) {
+      transform: translateY(5px);
     }
   }
 }
@@ -163,6 +175,14 @@ header {
       margin-top: 1.6rem;
     }
   }
+
+  @media (max-width: 1200px) {
+    position: absolute;
+    bottom: -80px;
+    left: 25%;
+    width: 400px;
+    height: 250px;
+  }
 }
 
 .plans {
@@ -170,9 +190,14 @@ header {
   display: flex;
 
   img {
-    height: 700px;
-    width: 900px;
+    height: 100%;
+    width: 100%;
     border-right: 2px solid #617c71;
+  }
+
+  @media (max-width: 1600px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -185,9 +210,14 @@ header {
 
   &_container {
     width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    h3 {
+      margin-top: 2rem;
+    }
 
     h2 {
       margin-top: 1rem;
@@ -209,7 +239,7 @@ header {
       }
     }
     button {
-      margin-top: 2rem;
+      margin: 2rem 0;
     }
   }
 }
@@ -218,10 +248,10 @@ header {
   background-color: #617c71;
   color: #f7f2ec;
   width: 100%;
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10rem 0;
 
   &_container {
     width: 80%;
@@ -230,6 +260,12 @@ header {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    @media (max-width: 1000px) {
+      width: 70%;
+    }
+  }
+  @media (max-width: 1000px) {
+    padding: 2rem 0;
   }
 }
 
@@ -257,7 +293,8 @@ header {
   &_container {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
+    min-width: 420px;
     background: #f7f2ec;
     align-items: center;
     justify-content: center;
@@ -275,14 +312,16 @@ header {
       font-size: 1rem;
     }
     .leads {
+      padding: 0 2rem;
       margin-top: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      align-self: flex-start;
       gap: 1.5rem;
 
       input[type='text'] {
-        width: 300px;
+        width: 250px;
         border-radius: 5px;
         padding: 0.5rem;
         border: 2px solid #617c71;
@@ -292,6 +331,11 @@ header {
 
       button {
         margin-top: 0;
+      }
+
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   }
@@ -323,10 +367,17 @@ footer {
       width: 300px;
       p {
         font-size: 1.3rem;
+
+        @media (max-width: 1000px) {
+          font-size: 1rem;
+        }
       }
       img {
         margin-top: 1.5rem;
         margin-left: 0.8rem;
+      }
+      @media (max-width: 1000px) {
+        width: 200px;
       }
     }
   }
@@ -339,4 +390,15 @@ footer {
   padding: 0.7rem 0;
   background-color: #eadbd6;
   font-family: 'Kaushan Script', cursive;
+}
+
+.hamburger {
+  display: none;
+
+  @media (max-width: 1300px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 }
